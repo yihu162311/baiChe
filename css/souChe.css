@@ -1,19 +1,3 @@
-body{
-	margin: 0;
-	padding: 0;
-	line-height: 1;
-	font-family: "microsoft yahei";
-}
-a{
-	text-decoration: none;
-	font-size: 12px;
-}
-input{
-	outline: none;
-	border: none;
-}
-
-
 /*顶部导航*/
 .nav{
 	height: 78px;
@@ -163,9 +147,11 @@ input{
 	color: #333333;
 }
 .main p{
+	font-size: 16px;
 	color: #999999;
+	text-align: center;
 }
-.main > p,.product >p{
+.main p,.product p{
 	margin: 20px 0 42px;
 }
 
@@ -174,11 +160,78 @@ input{
 }
 
 
-
-
-
-
-
+/*更多服务*/
+.moreService{
+	margin: 80px 0;
+	background: #FFFFFF;
+}
+.moreService h1{
+	text-align: center;
+	font-size: 32px;
+	font-weight: normal;
+	color: #333333;
+}
+.moreService p{
+	margin: 20px 0 42px;
+	font-size: 16px;
+	color: #999999;
+	text-align: center;
+}
+.moreService ul{
+	margin-left: 55px;
+}
+.moreService ul li{
+	position: relative;
+	float: left;
+	padding-right: 15px;
+	width: 325px;
+	height: 180px;
+}
+.moreService ul .jianJu{
+	margin-right: 15px;
+	border-right: 1px solid #E6E6E6;
+}
+.moreService ul li .include{
+	width:355px;
+	height: 65px;
+}
+.moreService ul li img{
+	display: block;
+	width: 64px;
+	height: 64px;
+}
+.moreService ul li .include img,.moreService ul li .include .textdesc{
+	float: left;
+}
+.moreService ul li .include .textdesc{
+	padding-top: 4px;
+	padding-left: 20px;
+	width: 270px;
+	height: 61px;
+}
+.moreService ul li .include h2{
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+.moreService ul li div.textDes{
+	position: absolute;
+	top: 80px;
+	width: 325px;
+}
+.moreService ul li .textDes p{
+	margin: 0;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: left;
+	color: #999999;
+}
+.moreService ul li .textDes a{
+	display: block;
+	margin-top: 20px;
+	font-size: 14px;
+	color: #fd7240;
+}
 
 
 
