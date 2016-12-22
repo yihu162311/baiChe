@@ -10,6 +10,9 @@ a{
 	text-decoration: none;
 	font-size: 12px;
 }
+img{
+	border: 0;
+}
 input{
 	outline: none;
 	border: none;
@@ -19,6 +22,9 @@ ul,li,ol{
 }
 h1,h2,h3,h4,h5,h6,b{
 	font-weight: normal;
+}
+em,i{
+	font-style: normal;
 }
 .clear{
 	zoom: 1;
@@ -32,14 +38,108 @@ h1,h2,h3,h4,h5,h6,b{
 }
 
 
+/*顶部导航*/
+.nav{
+	height: 78px;
+	border-top: 5px solid #FF571A;
+	border-bottom: 1px solid #DCDCDC;
+}
+
+.w1200{
+	margin: 0 auto;
+	width: 1200px;
+}
+.logo{
+	float: left;
+	margin-top: 18px;
+	margin-right: 18px;
+	width: 82px;
+	height: 36px;
+	background: url(../img/logo.png) no-repeat;
+}
+.icon{
+	background: url(../img/icon.png) no-repeat;
+}
+.nav .a{
+	margin-right: 35px;
+}
+.nav .cities{
+	float: left;
+	width: 86px;
+	height: 28px;
+	margin-top: 22px;
+	margin-right: 52px;
+	border: 1px solid #EDEDED;
+	font-size: 14px;
+	border-radius: 2px;
+}	
+.nav .fixedBox{
+	margin-top: 3px;
+	margin-left: -1px;
+	width: 360px;
+	height: 325px;
+	border: 1px solid #FF581A;
+	display: none;
+}
+.nav span{
+	display: block;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 23px;
+	cursor: pointer;
+	color: #666;
+}	
+.nav .sameP{
+	float: left;
+	height: 28px;
+	line-height: 28px;
+	margin:25px 36px 25px 0;
+	color: #333;
+}
+.nav input{
+	float: left;
+	margin: 20px 65px 25px 0;
+	padding: 0 8px;
+	width: 200px;
+	height: 28px;
+	border: 2px solid #E6E6E6;
+}
+.nav input:focus{
+	border: 2px solid #CCCCCC;
+}
+.nav .sign{
+	float: left;
+	line-height: 28px;
+	margin-top: 25px;
+	margin-right: 16px;
+}
+.nav .tel{
+	float: right;
+	margin-top: 20px;
+	width: 154px;
+	height: 36px;
+}
+.nav .sameP:hover,.nav .sign:hover{
+	color: #ff571a;
+}
+
+
 /*底部导航*/
 footer{
 	padding-top: 35px;
 	height: 365px;
 	background: #1F1F1F;
 }
+footer ul{
+	display: block;
+	height: 160px;
+}
 footer ul li{
 	float: left;
+	margin-right: 120px;
+	margin-bottom: 30px;
+	margin-left: 15px;
+	text-align: left;
 }
 footer ul li p{
 	margin-bottom: 10px;
@@ -54,4 +154,171 @@ footer ul li a{
 }
 footer ul li a:hover{
 	text-decoration: underline;
+}
+footer ul li img{
+	max-width: 66px;
+	max-height: 66px;
+	margin-right: auto;
+	margin-bottom: 18px;
+	margin-left: auto;
+	display: block;
+}
+footer ul li .guanZhu{
+	line-height: 1.1;
+	font-size: 14px;
+	color: #4f4f4f;
+	text-align: center;
+}
+footer .w1200 .cities{
+	display: block;
+	margin-bottom: 30px;
+	line-height: 25px;
+	color: #717171;
+}
+footer .w1200 .cities a{
+	color: #717171;
+	margin-left: 10px;
+}
+footer .w1200 .cities a:hover{
+	color: #FF571A;
+}
+footer .w1200 .otherInfo{
+	padding: 10px 0;
+	overflow: hidden;
+	border-top: 1px solid #363636;
+	border-bottom: 1px solid #363636;
+}
+footer .w1200 .otherInfo a{
+	float: left;
+	margin-right: 25px;
+	line-height: 20px;
+	display: block;
+	color: #717171;
+}
+footer .w1200 .otherInfo a:hover{
+	text-decoration: underline;
+}
+footer .w1200 .copyRight{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: #717171;
+}
+
+/*固定导航栏*/
+.fixed{
+	position: fixed;
+	top: 120px;
+	right: 0;
+	width: 80px;
+	height: 285px;
+	z-index: 1;
+}
+.fixed .box{
+	position: absolute;
+	top: 0;
+	right: -30px;
+	width: 80px;
+	height: 255px;
+	border-style: solid;
+	border-width: 1px 0 1px 1px;
+	border-color: #E6E6E6;
+	transition: all .3s;
+}
+.fixed .box:hover{
+	right: 0;
+}
+.fixed .backTop{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding-top: 3px;
+	width: 50px;
+	height: 20px;
+	border: 1px solid #333333;
+	color: #fff;
+	background: #333333;
+	cursor: pointer;
+}
+.fixed .backTop i{
+	float: left;
+	display: block;
+	margin-top: 7px;
+	margin-left: 10px;
+	width: 5px;
+	height: 3px;
+	background: url(../img/icon2.png) no-repeat;
+	background-position: 0 -40px;
+}
+.fixed .backTop span{
+	color: #fff;
+	margin-left: 3px;
+}
+.fixed .box .myCar{
+	height: 32px;
+	border: 1px solid #FF571A;
+	background: #FF571A;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	line-height: 32px;
+	overflow: hidden;
+}
+.fixed .box .sideBar{
+	position: relative;
+	height: 54px;
+	background: #FFFFFF;
+	border-bottom: 1px solid #F7F7F7;
+	cursor: pointer;
+}
+.fixed .box .sideBar:hover{
+	background:#FFFFFF;
+}
+.fixed .box .sideBar .smBox{
+	position: absolute;
+	top: 6px;
+	left: 5px;
+}
+.fixed .box .sideBar .smBox i{
+	display: block;
+	width: 16px;
+	height: 16px;
+	margin-top: 5px;
+	margin-left: 14px;
+	background: url(../img/icon2.png) no-repeat;
+}
+.fixed .box .sideBar .smBox .focusOn{
+	background-position: 0 0;
+}
+.fixed .box .sideBar .smBox .askFor{
+	background-position: 0 0;
+}
+.fixed .box .sideBar .smBox .guessP{
+	background-position:-40px -42px;
+}
+.fixed .box .sideBar .smBox .feedBack{
+	background-position:-80px 0;
+}
+.fixed .box:hover{
+	right: ;
+}
+.fixed .box .sideBar .smBox:hover .focusOn{
+	background-position: 0 -20px;
+}
+.fixed .box .sideBar .smBox:hover .askFor{
+	background-position: 0 -20px;
+}
+.fixed .box .sideBar .smBox:hover .guessP{
+	background-position:-40px -60px;
+}
+.fixed .box .sideBar .smBox:hover .feedBack{
+	background-position:-80px -20px;
+}
+.fixed .box .sideBar .smBox span{
+	display: block;
+	overflow: hidden;
+	margin-top: 5px;
+	margin-left: 11px;
+	color: #666;
+	text-align: left;
+	font-style: normal;	
 }

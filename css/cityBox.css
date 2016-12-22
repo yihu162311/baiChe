@@ -1,0 +1,34 @@
+/*城市大全*/
+.cityBox h1{
+	margin-top: 20px;
+	font-size: 20px;
+	color: #333;
+	text-align: left;
+	font-weight: bold;
+}
+.cityBox .title{
+	margin-top: 30px;
+}
+.cityBox .container li,.cityBox .title{
+	margin-bottom: 20px;
+}
+.cityBox  h2{
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: #333;
+	font-weight: bold;
+}
+.cityBox li h2{
+	cursor: pointer;
+}
+.cityBox .container li h2:hover{
+	color: #FF571A;
+}
+.cityBox a{
+	margin-right: 10px;
+	font-size: 14px;
+	color: #666;
+}
+.cityBox a:hover{
+	color: #FF571A;
+}

@@ -1,0 +1,52 @@
+.w960{
+	margin: 0 auto;
+	width: 960px;
+}
+.secondCars .content{
+	margin: 30px auto;
+	padding: 10px 30px;
+}
+.secondCars h1{
+	margin: 15px auto;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 50px;
+	text-align: center;
+	color: #444;
+}
+.secondCars .article{
+	margin: 10px 0;
+	font-size: 14px;
+	color: #444;
+	line-height: 25px;
+}
+.secondCars p{
+	margin: 10px 0;
+	display: block;
+	font-size: 14px;
+	color: #444;
+	line-height: 25px;
+}
+.secondCars h3{
+	font-size: 14px;
+	line-height: 25px;
+	color: #FF8C00;
+}
+.secondCars .img{
+	margin-bottom: 20px;
+	width: 620px;
+	height: 465px;
+}
+.secondCars img{
+	border: 0;
+}
+.secondCars .paragraph{
+	font-size: 14px;
+	color: #444;
+	line-height: 25px;
+}
+.secondCars h4{
+	font-size: 14px;
+	line-height: 25px;
+	color: #444;
+}

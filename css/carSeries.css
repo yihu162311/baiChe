@@ -1,0 +1,63 @@
+.carSeries h1{
+	margin-top: 20px;
+	font-size: 20px;
+	color: #333;
+	text-align: left;
+	font-weight: bold;
+}
+.carSeries .seriesBox{
+	margin-top: 30px;
+	overflow: hidden;
+}
+.carSeries .seriesBox li{
+	margin-bottom: 20px;
+	height: 250px;
+	overflow: hidden;
+}
+.carSeries .seriesBox li .initial{
+	float: left;
+	margin-bottom: 10px;
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: #666;
+	border: 1px solid #999;
+	text-transform: uppercase;
+}
+.carSeries .seriesBox li .series{
+	float: left;
+	margin-left: 30px;
+	
+}
+.carSeries .seriesBox li .series .oneSeries{
+	display: block;
+	width: 1000px;
+	overflow: hidden;
+}
+.carSeries .seriesBox li .series .seriesName{
+	float: left;
+	margin-right: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #666666;
+}
+.carSeries .seriesBox li .series .seriesName:hover{
+	color: #FF571A;
+}
+.carSeries .seriesBox li .series .carNameBox{
+	float: left;
+	margin-bottom: 10px;
+	
+}
+.carSeries .seriesBox li .series .carNameBox a{
+	margin-right: 15px;
+	line-height: 30px;
+	color: #666;
+}
+.carSeries .seriesBox li .series .carNameBox a:hover{
+	color: #FF571A;
+}

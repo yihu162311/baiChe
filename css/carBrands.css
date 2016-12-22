@@ -1,0 +1,40 @@
+.carBrands h1{
+	margin-top: 20px;
+	font-size: 20px;
+	color: #333;
+	text-align: left;
+	font-weight: bold;
+}
+.carBrands .brandBox{
+	margin-top: 30px;
+	overflow: hidden;
+}
+.carBrands .brandBox li{
+	margin-bottom: 20px;
+	height: 42px;
+}
+.carBrands .brandBox li .initial{
+	float: left;
+	margin-bottom: 10px;
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: #666;
+	border: 1px solid #999;
+	text-transform: uppercase;
+}
+.carBrands .brandBox li .brands{
+	float: left;
+	margin-left: 30px;
+}
+.carBrands .brandBox li .brands a{
+	margin-right: 15px;
+	color: #666;
+	line-height: 30px;
+}
+.carBrands .brandBox li .brands a:hover{
+	color: #FF571A;
+}

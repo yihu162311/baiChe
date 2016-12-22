@@ -1,22 +1,4 @@
-//数组forEach方法补丁
-Array.prototype.forEach = function(callback){
-	var a = 0,
-		len = this.length;
-	while(a < len){
-		callback(this[a], a++, this);
-	}
-};
 
-//数组map方法补丁
-Array.prototype.map = function(callback){
-	var a = 0,
-		len = this.length,
-		result = [];
-	while(a <len){
-		result.push(callback(this[a],a++,this));
-	}
-	return result;
-}
 /*轮播图*/
 var bannerData = [
 	{
@@ -92,63 +74,91 @@ createBanner({
 	data:bannerData
 });
 
-/*车展览*/
-function createBox(option){
-	var a = document.createElement("a");
-	a.style.backgroundImage = "url("+option.bigUrl+")";
-	a.href = option.href;
-	
-}
 
-var exhibitionData = [
+
+
+/*展示信息*/
+var exhibitData = [
 	{
-		href:"/a",
-		bigUrl:"./img/exhibition.jpg",
-		smallUrl:"./img/logo.png",
-		title:"豪车不止BBA",
-		label:"德系三驾马车,是时候退位让贤啦"
+		title : "豪车不止BBA",
+		label : "德系三驾马车,是时候退位让贤啦",
+		href : "#",
+		big_bg : "./img/exhibition01.jpg",
+		sm_bg : "./img/sm_exhibit01.png",
 	},
 	{
-		href:"/a",
-		bigUrl:"./img/exhibition.jpg",
-		smallUrl:"./img/logo.png",
-		title:"豪车不止BBA",
-		label:"德系三驾马车,是时候退位让贤啦"
+		title : "豪车不止BBA",
+		label : "德系三驾马车,是时候退位让贤啦",
+		href : "#",
+		big_bg : "./img/exhibition02.jpg",
+		sm_bg : "./img/sm_exhibit02.png",
 	},
 	{
-		href:"/a",
-		bigUrl:"./img/exhibition.jpg",
-		smallUrl:"./img/logo.png",
-		title:"豪车不止BBA",
-		label:"德系三驾马车,是时候退位让贤啦"
+		title : "豪车不止BBA",
+		label : "德系三驾马车,是时候退位让贤啦",
+		href : "#",
+		big_bg : "./img/exhibition03.jpg",
+		sm_bg : "./img/sm_exhibit03.png",
 	},
 	{
-		href:"/a",
-		bigUrl:"./img/exhibition.jpg",
-		smallUrl:"./img/logo.png",
-		title:"豪车不止BBA",
-		label:"德系三驾马车,是时候退位让贤啦"
+		title : "豪车不止BBA",
+		label : "德系三驾马车,是时候退位让贤啦",
+		href : "#",
+		big_bg : "./img/exhibition04.jpg",
+		sm_bg : "./img/sm_exhibit04.png",
 	},
 	{
-		href:"/a",
-		bigUrl:"./img/exhibition.jpg",
-		smallUrl:"./img/logo.png",
-		title:"豪车不止BBA",
-		label:"德系三驾马车,是时候退位让贤啦"
+		title : "豪车不止BBA",
+		label : "德系三驾马车,是时候退位让贤啦",
+		href : "#",
+		big_bg : "./img/exhibition05.jpg",
+		sm_bg : "./img/sm_exhibit05.png",
 	},
 	{
-		href:"/a",
-		bigUrl:"./img/exhibition.jpg",
-		smallUrl:"./img/logo.png",
-		title:"豪车不止BBA",
-		label:"德系三驾马车,是时候退位让贤啦"
-	},
-	
+		title : "豪车不止BBA",
+		label : "德系三驾马车,是时候退位让贤啦",
+		href : "#",
+		big_bg : "./img/exhibition06.jpg",
+		sm_bg : "./img/sm_exhibit06.png",
+	}
 ]
 
-
-
-
+function createExhibit(option){
+	var exh = document.getElementById("exhibition"),
+		fragment = document.createDocumentFragment(),
+		data = option.forEach(function(item){
+			return fragment.appendChild(createPic(item));
+		});
+		
+	
+	function createPic(option){
+		var a = document.createElement("a"),
+			leftB = document.createElement("div"),
+			rightB = document.createElement("div"),
+			rigDownB = document.createElement("div"),
+			h2 = document.createElement("h2"),
+			p = document.createElement("p"),
+			img = document.createElement("img");
+		a.className = "imgContainer";
+		a.href = option.href;
+		leftB.className = "leftB";
+		leftB.style.backgroundImage = "url("+option.big_bg+")";
+		rightB.className = "rightB";
+		rigDownB.className = "rigDownB";
+		h2.innerText = option.title;
+		p.innerText = option.label;
+		img.src = option.sm_bg;
+		rigDownB.appendChild(img);
+		rightB.appendChild(h2);
+		rightB.appendChild(p);
+		rightB.appendChild(rigDownB);
+		a.appendChild(leftB);
+		a.appendChild(rightB);
+		return a;
+	}
+	exh.appendChild(fragment);
+}
+createExhibit(exhibitData);
 
 
 

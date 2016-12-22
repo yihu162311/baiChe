@@ -1,0 +1,31 @@
+.w960{
+	margin: 0 auto;
+	width: 960px;
+}
+.problemExplain .content{
+	margin: 30px auto;
+	padding: 10px 30px;
+}
+.problemExplain h1{
+	margin: 15px auto;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 50px;
+	text-align: center;
+	color: #444;
+}
+.problemExplain h3{
+	margin: 10px 0;
+	font-size: 14px;
+	line-height: 25px;
+	color: #FF8C00;
+}
+.problemExplain p{
+	margin: 10px 0;
+	font-size: 14px;
+	line-height: 25px;
+	color: #444;
+}
+.problemExplain .range{
+	margin-bottom: 45px;
+}

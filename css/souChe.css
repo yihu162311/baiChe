@@ -1,87 +1,3 @@
-/*顶部导航*/
-.nav{
-	height: 78px;
-	border-top: 5px solid #FF571A;
-	background:
-	}
-
-.w1200{
-	margin: 0 auto;
-	width: 1200px;
-	}
-.logo{
-	float: left;
-	margin-top: 18px;
-	margin-right: 18px;
-	width: 82px;
-	height: 36px;
-	background: url(../img/logo.png) no-repeat;
-}
-.icon{
-	background: url(../img/icon.png) no-repeat;
-}
-.nav .a{
-	margin-right: 35px;
-}
-.nav .cities{
-	float: left;
-	width: 86px;
-	height: 28px;
-	margin-top: 22px;
-	margin-right: 52px;
-	border: 1px solid #EDEDED;
-	font-size: 14px;
-	border-radius: 2px;
-}	
-.nav .fixedBox{
-	margin-top: 3px;
-	margin-left: -1px;
-	width: 360px;
-	height: 325px;
-	border: 1px solid #FF581A;
-	display: none;
-}
-.nav span{
-	display: block;
-	height: 28px;
-	line-height: 28px;
-	padding-left: 23px;
-	cursor: pointer;
-	color: #666;
-}	
-.nav .sameP{
-	float: left;
-	height: 28px;
-	line-height: 28px;
-	margin:25px 36px 25px 0;
-	color: #333;
-}
-.nav input{
-	float: left;
-	margin: 20px 65px 25px 0;
-	padding: 0 8px;
-	width: 200px;
-	height: 28px;
-	border: 2px solid #E6E6E6;
-}
-.nav input:focus{
-	border: 2px solid #CCCCCC;
-}
-.nav .sign{
-	float: left;
-	line-height: 28px;
-	margin-top: 25px;
-	margin-right: 16px;
-}
-.nav .tel{
-	float: right;
-	margin-top: 31px;
-	width: 154px;
-	height: 36px;
-}
-.nav .sameP:hover,.nav .sign:hover{
-	color: #ff571a;
-}
 
 
 /*轮播图*/
@@ -133,6 +49,7 @@
 /*主体内容*/
 .main{
 	padding-top:90px;
+	padding-bottom: 40px;
 	overflow:hidden;
 	background-color: #F2F2F2;
 }
@@ -151,15 +68,67 @@
 	color: #999999;
 	text-align: center;
 }
-.main p,.product p{
+.main>p,.product p{
 	margin: 20px 0 42px;
 }
 
-.main .container{
-	width: 1220px;
+/*展览车信息*/
+.main .w1200 .container{
+	margin-top: 40px;
+	width: 1300px;
 }
-
-
+.main .w1200 .container .imgContainer{
+	float: left;
+	display: block;
+	width: 570px;
+	height: 240px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	background: #fff;
+	text-align: center;
+}
+.main .w1200 .container .imgContainer:hover{
+	box-shadow: 5px 5px 5px #B6B6B6;
+}
+.main .w1200 .container .imgContainer:hover img{
+	transform: translateX(-10px);
+}	
+.main .w1200 .container .imgContainer .leftB{
+	float: left;
+	width: 285px;
+	height: 100%;
+}
+.main .w1200 .container .imgContainer .rightB{
+	float: left;
+	width: 285px;
+	text-align: center;
+}
+.main .w1200 .container .imgContainer .rightB h2{
+	margin-top: 27px;
+	font-size: 20px;
+	line-height: 30px;
+	color: #444;
+}
+.main .w1200 .container .imgContainer:hover .rightB h2{
+	color: #FF571A;
+}	
+.main .w1200 .container .imgContainer .rightB p{
+	margin-top: 8px;
+	height: 55px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #999;
+}
+.main .w1200 .container .imgContainer .rightB .rigDownB{
+	width: 285px;
+	height: 120px;
+}
+.main .w1200 .container .imgContainer .rightB .rigDownB img{
+	max-width: 210px;
+	max-height: 110px;
+	background:no-repeat;
+	transition: all .3s ease;
+}
 /*更多服务*/
 .moreService{
 	margin: 80px 0;
@@ -232,12 +201,6 @@
 	font-size: 14px;
 	color: #fd7240;
 }
-
-
-
-
-
-
 
 
 

@@ -1,0 +1,32 @@
+.w960{
+	margin: 0 auto;
+	width: 960px;
+}
+.howToJudge .content{
+	margin: 30px auto;
+	padding: 10px 30px;
+}
+.howToJudge h1{
+	margin: 15px auto;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 50px;
+	text-align: center;
+	color: #444;
+}
+.howToJudge p{
+	margin: 10px 0;
+	font-size: 14px;
+	color: #444;
+	line-height: 25px;
+}
+.howToJudge h2{
+	margin-top: 55px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	line-height: 25px;
+	color: #FF8C00;
+}
+.howToJudge img{
+	border: 0;
+}
