@@ -61,9 +61,7 @@ em,i{
 .icon{
 	background: url(../img/icon.png) no-repeat;
 }
-.nav .a{
-	margin-right: 35px;
-}
+
 .nav .cities{
 	position: relative;
 	float: left;
@@ -72,7 +70,6 @@ em,i{
 	border: 1px solid #EDEDED;
 	font-size: 14px;
 	border-radius: 2px;
-	overflow: hidden;
 	cursor: pointer;
 }
 .nav span{
@@ -97,9 +94,8 @@ em,i{
 	position: absolute;
 	top: 31px;
 	left: 0;
-	margin-top: 3px;
-	overflow: hidden;
 	background: #fff;
+	z-index: 2;
 }
 .nav .cities .fixedBox .center{
 	padding: 20px;
