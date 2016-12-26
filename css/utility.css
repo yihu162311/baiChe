@@ -55,7 +55,8 @@ em,i{
 	margin-right: 18px;
 	width: 82px;
 	height: 36px;
-	background: url(../img/logo.png) no-repeat;
+	background: url(../img/bull.jpg) no-repeat;
+	background-size: 100%;
 }
 .icon{
 	background: url(../img/icon.png) no-repeat;
@@ -64,31 +65,55 @@ em,i{
 	margin-right: 35px;
 }
 .nav .cities{
+	position: relative;
 	float: left;
-	width: 86px;
-	height: 28px;
 	margin-top: 22px;
 	margin-right: 52px;
 	border: 1px solid #EDEDED;
 	font-size: 14px;
 	border-radius: 2px;
-}	
-.nav .fixedBox{
-	margin-top: 3px;
-	margin-left: -1px;
-	width: 360px;
-	height: 325px;
-	border: 1px solid #FF581A;
-	display: none;
+	overflow: hidden;
+	cursor: pointer;
 }
 .nav span{
+	float: left;
 	display: block;
-	height: 28px;
-	line-height: 28px;
-	padding-left: 23px;
-	cursor: pointer;
+	width: 75px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
 	color: #666;
 }	
+.nav .cities i{
+	position: absolute;
+	display: block;
+	margin-top: 11px;
+	right: 5px;
+	width: 10px;
+	height: 30px;
+	background: url(../img/city-chose.png) no-repeat;
+}
+.nav .cities .fixedBox{
+	position: absolute;
+	top: 31px;
+	left: 0;
+	margin-top: 3px;
+	overflow: hidden;
+	background: #fff;
+}
+.nav .cities .fixedBox .center{
+	padding: 20px;
+	width: 360px;
+	height: 260px;
+}
+.nav .cities .fixedBox .center .centerUp{
+	padding-bottom: 20px;
+	color: #777;
+	border-bottom: 1px solid #ededed;
+}
+.nav .cities .fixedBox .center .centerDown{
+	margin-top: 20px;
+}
 .nav .sameP{
 	float: left;
 	height: 28px;
@@ -207,8 +232,8 @@ footer .w1200 .copyRight{
 /*固定导航栏*/
 .fixed{
 	position: fixed;
-	top: 120px;
 	right: 0;
+	bottom: 80px;
 	width: 80px;
 	height: 285px;
 	z-index: 1;
