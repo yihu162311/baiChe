@@ -72,7 +72,7 @@ em,i{
 	border-radius: 2px;
 	cursor: pointer;
 }
-.nav span{
+.nav .city{
 	float: left;
 	display: block;
 	width: 75px;
