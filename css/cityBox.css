@@ -19,7 +19,8 @@
 	font-weight: bold;
 }
 .cityBox li h2{
-	width: 10%;
+	/*width: 10%;*/
+	display: table;
 	cursor: pointer;
 }
 .cityBox .container li h2:hover{

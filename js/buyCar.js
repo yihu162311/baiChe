@@ -200,6 +200,7 @@ function createSelect(option){
 		icon = document.createElement("i"),
 		ul = function(){
 			var ul = document.createElement("ul");
+			ul.style.zIndex = "1";
 			option.options.forEach(function(item){
 				var li = document.createElement("li");
 				li.innerText = item.name;

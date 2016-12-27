@@ -66,10 +66,11 @@
 .main .left .bottom .select ul li{
 	padding-left: 20px;
 	height: 25px;
-	background-color: white;
+	background: #fff;
 	font-size: 12px;
 	line-height: 25px;
 	color:rgb(102, 102, 102);
+	z-index: 100;
 }
 .main .left .bottom .select ul li:hover{
 	background-color:rgb(255, 88, 26);

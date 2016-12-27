@@ -203,8 +203,8 @@ footer ul li a:hover{
 	text-decoration: underline;
 }
 footer ul li img{
-	max-width: 66px;
-	max-height: 66px;
+	width: 66px;
+	height: 66px;
 	margin-right: auto;
 	margin-bottom: 18px;
 	margin-left: auto;
