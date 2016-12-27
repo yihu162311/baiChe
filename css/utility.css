@@ -70,9 +70,8 @@ em,i{
 	border: 1px solid #EDEDED;
 	font-size: 14px;
 	border-radius: 2px;
-	cursor: pointer;
 }
-.nav .city{
+.nav .beijing{
 	float: left;
 	display: block;
 	width: 75px;
@@ -80,6 +79,7 @@ em,i{
 	line-height: 30px;
 	text-align: center;
 	color: #666;
+	cursor: pointer;
 }	
 .nav .cities i{
 	position: absolute;
@@ -89,26 +89,52 @@ em,i{
 	width: 10px;
 	height: 30px;
 	background: url(../img/city-chose.png) no-repeat;
+	cursor: pointer;
 }
 .nav .cities .fixedBox{
 	position: absolute;
 	top: 31px;
 	left: 0;
 	background: #fff;
+	border: 1px solid #ff581a;
 	z-index: 2;
+	display: none;
+}
+.nav .cities:hover .fixedBox{
+	display: block;
 }
 .nav .cities .fixedBox .center{
 	padding: 20px;
 	width: 360px;
 	height: 260px;
 }
+.nav .cities .fixedBox .center span{
+	float: left;
+	display: block;
+	padding-right: 15px;
+	line-height: 28px;
+	color: #777;
+}
+.nav .cities .fixedBox .center a{
+	margin-left: 15px;
+	line-height: 28px;
+	color: #FF5719;
+}
 .nav .cities .fixedBox .center .centerUp{
 	padding-bottom: 20px;
-	color: #777;
 	border-bottom: 1px solid #ededed;
 }
 .nav .cities .fixedBox .center .centerDown{
 	margin-top: 20px;
+}
+.nav .cities .fixedBox .center .centerDown span{
+	border-right: 1px solid #ededed;
+}
+.nav .cities .fixedBox .center .centerDown a{
+	color: #333;
+}
+.nav .cities .fixedBox .center .centerDown a:hover{
+	color: #FF5719;
 }
 .nav .sameP{
 	float: left;
